@@ -32,7 +32,6 @@ public class HelloController implements Initializable {
         if(renewSeason){
             renewSeason("All");
             renewSeason=false;
-            //System.out.println("adadada");
             firstHalf=true;
         }
         temporary = textBox.getText();
@@ -69,7 +68,7 @@ public class HelloController implements Initializable {
         } else if (sign.equals("divide")) {
             result = a/b;
         } else{
-            System.out.println("Chyba v zadání znaménka");
+            System.out.println("Error in sign assignment");
         }
         textBox.setText(String.valueOf(result));
         firstHalfTemporary = String.valueOf(result);
@@ -86,7 +85,7 @@ public class HelloController implements Initializable {
                 secondHalfTemporary = "";
             }
         }else{
-            System.out.println("Chyba v zadání renewSeason");
+            System.out.println("Error in renewSeason assignment");
         }
 
 
